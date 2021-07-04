@@ -1,0 +1,202 @@
+{% extends 'main.html' %}
+{% load static %}
+
+{% block content %}
+  {% include 'navbar.html' %}
+  {% include 'carousel.html' %}
+  <!-- Services-->
+  <section class="page-section" id="services">
+      <div class="container">
+          <div class="text-center">
+              <h2 class="section-heading text-uppercase">Services</h2>
+              <h3 class="section-subheading text-muted">We are currently providing the following services.</h3>
+          </div>
+          <div class="row text-center">
+              <div class="col-md-4">
+                  <span class="fa-stack fa-4x">
+                      <i class="fas fa-circle fa-stack-2x text-primary"></i>                                <!-- <img class="" src="assets/img/icons/gaze_icon.png" alt="gaze" style="width:20%"> -->
+                      <i class="fas fa-dizzy fa-stack-1x fa-inverse"></i>
+                        <!-- <i class="fas fa-tired fa-stack-1x fa-inverse"></i> -->
+                      <!-- <i class="fas fa-camera fa-stack-1x fa-inverse"></i> -->
+
+                      <!-- <img class="" src="assets/img/icons/gaze_icon.png" alt="gaze"> -->
+                      <!-- <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i> -->
+                  </span>
+                  <h4 class="my-3">Drowsiness Detection</h4>
+                  <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                  <!-- <button type="button" name="button">Start</button> -->
+                  <a class="btn btn-primary  text-uppercase" href="{% url 'home' %}">Start</a>
+              </div>
+              <div class="col-md-4">
+                  <span class="fa-stack fa-4x">
+                      <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                      <i class="far fa-grin fa-stack-1x fa-inverse"></i>
+                      <!-- <i class="fas fa-laptop fa-stack-1x fa-inverse"></i> -->
+                  </span>
+                  <h4 class="my-3">Face Recognition</h4>
+                  <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                  <a class="btn btn-primary  text-uppercase" href="">Start</a>
+              </div>
+              <div class="col-md-4">
+                  <span class="fa-stack fa-4x">
+                      <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                      <i class="fas fa-diagnoses fa-stack-1x fa-inverse"></i>
+                      <!-- <i class="fas fa-lock fa-stack-1x fa-inverse"></i> -->
+                  </span>
+                  <h4 class="my-3">Person Fall Detection</h4>
+                  <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                  <a class="btn btn-primary  text-uppercase" href="">Start</a>
+              </div>
+          </div>
+      </div>
+  </section>
+  <!-- Showcase Grid-->
+  <section class="showcase" style="padding: 0rem 0;" id="my_work">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="Heading" style="display:flex;justify-content:center;padding-bottom:3rem;padding-top:6rem;">
+              <h1>My Work</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid p-0">
+          <div class="row g-0">
+              <!-- <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('assets/img/bg-showcase-1.jpg')"></div> -->
+              <div class="col-lg-6 order-lg-2 ">
+                <video width="900" height="600" controls autoplay muted loop>
+                  <source src="{% static 'assets/nature.mp4' %}" type="video/mp4">
+                  <!-- <source src="movie.ogg" type="video/ogg"> -->
+                      Your browser does not support the video tag.
+                  </video>
+              </div>
+              <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+                  <h2>Drowsiness Detection</h2>
+                  <p class="lead mb-0">When you use a theme created by Start Bootstrap, you know that the theme will look great on any device, whether it's a phone, tablet, or desktop the page will behave responsively!</p>
+              </div>
+          </div>
+          <div class="row g-0">
+              <div class="col-lg-6 text-white showcase-img" style="background-image: url('{% static 'assets/img/bg-showcase-2.jpg' %}')"></div>
+              <div class="col-lg-6 my-auto showcase-text">
+                  <h2>Face Recognition</h2>
+                  <p class="lead mb-0">Newly improved, and full of great utility classes, Bootstrap 5 is leading the way in mobile responsive web development! All of the themes on Start Bootstrap are now using Bootstrap 5!</p>
+              </div>
+          </div>
+          <div class="row g-0">
+              <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('{% static 'assets/img/bg-showcase-3.jpg' %}')"></div>
+              <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+                  <h2>Person Fall Detection</h2>
+                  <p class="lead mb-0">Landing Page is just HTML and CSS with a splash of SCSS for users who demand some deeper customization options. Out of the box, just add your content and images, and your new landing page will be ready to go!</p>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <!-- About-->
+  <section class="page-section" id="about">
+      <div class="container">
+          <div class="text-center">
+              <h2 class="section-heading text-uppercase">About</h2>
+              <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+          </div>
+          <ul class="timeline">
+              <li>
+                  <div class="timeline-image"><img class="rounded-circle img-fluid" src="{% static 'assets/img/about/1.jpg' %}" alt="..." /></div>
+                  <div class="timeline-panel">
+                      <div class="timeline-heading">
+                          <h4>2009-2011</h4>
+                          <h4 class="subheading">Our Humble Beginnings</h4>
+                      </div>
+                      <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
+                  </div>
+              </li>
+              <li class="timeline-inverted">
+                  <div class="timeline-image"><img class="rounded-circle img-fluid" src="{% static 'assets/img/about/2.jpg' %}" alt="..." /></div>
+                  <div class="timeline-panel">
+                      <div class="timeline-heading">
+                          <h4>March 2011</h4>
+                          <h4 class="subheading">An Agency is Born</h4>
+                      </div>
+                      <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
+                  </div>
+              </li>
+              <li>
+                  <div class="timeline-image"><img class="rounded-circle img-fluid" src="{% static 'assets/img/about/3.jpg' %}" alt="..." /></div>
+                  <div class="timeline-panel">
+                      <div class="timeline-heading">
+                          <h4>December 2015</h4>
+                          <h4 class="subheading">Transition to Full Service</h4>
+                      </div>
+                      <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
+                  </div>
+              </li>
+              <li class="timeline-inverted">
+                  <div class="timeline-image"><img class="rounded-circle img-fluid" src="{% static 'assets/img/about/4.jpg' %}" alt="..." /></div>
+                  <div class="timeline-panel">
+                      <div class="timeline-heading">
+                          <h4>July 2020</h4>
+                          <h4 class="subheading">Phase Two Expansion</h4>
+                      </div>
+                      <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
+                  </div>
+              </li>
+              <li class="timeline-inverted">
+                  <div class="timeline-image">
+                      <h4>
+                          Be Part
+                          <br />
+                          Of Our
+                          <br />
+                          Story!
+                      </h4>
+                  </div>
+              </li>
+          </ul>
+      </div>
+  </section>
+  <!-- Team-->
+  <section class="page-section bg-light" id="team">
+      <div class="container">
+          <div class="text-center">
+              <h2 class="section-heading text-uppercase">Our Team</h2>
+              <h3 class="section-subheading text-muted">We’re a team of self-starting, mission-driven individuals with a passion for purposeful innovation and of course, office pups! That said, we don’t take ourselves too seriously, love to celebrate, and put people at the center of everything we do.</h3>
+          </div>
+          <div class="row">
+              <div class="col-lg-6">
+                  <div class="team-member">
+                      <img class="mx-auto rounded-circle" src="{% static 'assets/img/team/1.jpg' %}" alt="..." />
+                      <h4>VBP</h4>
+                      <p class="text-muted">Lead Designer</p>
+                      <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                      <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                      <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                  </div>
+              </div>
+              <div class="col-lg-6">
+                  <div class="team-member">
+                      <img class="mx-auto rounded-circle" src="{% static 'assets/img/team/2.jpg' %}" alt="..." />
+                      <h4>JC</h4>
+                      <p class="text-muted">Lead Marketer</p>
+                      <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                      <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                      <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                  </div>
+              </div>
+              <!-- <div class="col-lg-4">
+                  <div class="team-member">
+                      <img class="mx-auto rounded-circle" src="assets/img/team/3.jpg" alt="..." />
+                      <h4>Larry Parker</h4>
+                      <p class="text-muted">Lead Developer</p>
+                      <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                      <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                      <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                  </div>
+              </div> -->
+          </div>
+          <div class="row">
+              <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">Our mission, to make the world more fair, starts with building a company where diversity is a priority. We are committed to creating a culture of inclusivity, where there are opportunities for all, everyone feels like they belong, and different perspectives are valued. Do what you love and have an awesome time doing it. We’re a team of engaging, motivated, intelligent, and energized trouble-shooters who work hard, play hard, and are committed to making an impact</p></div>
+          </div>
+      </div>
+  </section>
+{% endblock %}

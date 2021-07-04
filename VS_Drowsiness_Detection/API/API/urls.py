@@ -19,6 +19,6 @@ from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',views.LandingPage, name="landingpage"),
+    path('',views.HomePage, name="home_page"),
     path('sleep_detect/',include('sleep_detect.urls'))
 ]
