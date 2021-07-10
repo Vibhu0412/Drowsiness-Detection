@@ -14,16 +14,11 @@
           <div class="row text-center">
               <div class="col-md-4">
                   <span class="fa-stack fa-4x">
-                      <i class="fas fa-circle fa-stack-2x text-primary"></i>                                <!-- <img class="" src="assets/img/icons/gaze_icon.png" alt="gaze" style="width:20%"> -->
+                      <i class="fas fa-circle fa-stack-2x text-primary"></i>
                       <i class="fas fa-dizzy fa-stack-1x fa-inverse"></i>
-                        <!-- <i class="fas fa-tired fa-stack-1x fa-inverse"></i> -->
-                      <!-- <i class="fas fa-camera fa-stack-1x fa-inverse"></i> -->
-
-                      <!-- <img class="" src="assets/img/icons/gaze_icon.png" alt="gaze"> -->
-                      <!-- <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i> -->
                   </span>
                   <h4 class="my-3">Drowsiness Detection</h4>
-                  <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                  <p class="text-muted">We offer you a accurate detection of your driver's reflexes. Our algorithm learn driver patterns in real time and can detect when a driver is becoming drowsy.</p>
                   <!-- <button type="button" name="button">Start</button> -->
                   <a class="btn btn-primary  text-uppercase" href="{% url 'home' %}">Start</a>
               </div>
@@ -34,8 +29,8 @@
                       <!-- <i class="fas fa-laptop fa-stack-1x fa-inverse"></i> -->
                   </span>
                   <h4 class="my-3">Face Recognition</h4>
-                  <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-                  <a class="btn btn-primary  text-uppercase" href="">Start</a>
+                  <p class="text-muted">For an easy and swift way to recognize face of a subject from a pool of data; we offer you a great flex in this service. We are thriving towards mass!</p>
+                  <a class="btn btn-primary  text-uppercase" href="{% url 'under_construction' %}">Start</a>
               </div>
               <div class="col-md-4">
                   <span class="fa-stack fa-4x">
@@ -44,8 +39,8 @@
                       <!-- <i class="fas fa-lock fa-stack-1x fa-inverse"></i> -->
                   </span>
                   <h4 class="my-3">Person Fall Detection</h4>
-                  <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-                  <a class="btn btn-primary  text-uppercase" href="">Start</a>
+                  <p class="text-muted">We alert you when a fall event has occurred.In a real-life scenario, our algorithm has the potential to mitigate some of the adverse consequences of the fall.</p>
+                  <a class="btn btn-primary  text-uppercase" href="{% url 'under_construction' %}">Start</a>
               </div>
           </div>
       </div>
@@ -65,96 +60,38 @@
           <div class="row g-0">
               <!-- <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('assets/img/bg-showcase-1.jpg')"></div> -->
               <div class="col-lg-6 order-lg-2 ">
-                <video width="900" height="600" controls autoplay muted loop>
-                  <source src="{% static 'assets/nature.mp4' %}" type="video/mp4">
-                  <!-- <source src="movie.ogg" type="video/ogg"> -->
+                <!-- <video width="576" height="360" controls autoplay muted loop>
+                  <source src="{% static 'assets/videos/main_123.mp4' %}" type="video/mp4">
                       Your browser does not support the video tag.
-                  </video>
+                </video> -->
+                <iframe width="100%" height="600"
+                  src="https://www.youtube.com/embed/oMp472E72VE?autoplay=1&mute=1">
+                </iframe>
+
               </div>
               <div class="col-lg-6 order-lg-1 my-auto showcase-text">
                   <h2>Drowsiness Detection</h2>
-                  <p class="lead mb-0">When you use a theme created by Start Bootstrap, you know that the theme will look great on any device, whether it's a phone, tablet, or desktop the page will behave responsively!</p>
+                  <p class="lead mb-0">The objective of this intermediate Python project is to build a drowsiness detection system that will detect that a person's eyes are closed for a few seconds.</p>
               </div>
           </div>
           <div class="row g-0">
-              <div class="col-lg-6 text-white showcase-img" style="background-image: url('{% static 'assets/img/bg-showcase-2.jpg' %}')"></div>
+              <div class="col-lg-6 text-white showcase-img" style="background-image: url('{% static 'assets/img/face_recog_main.jpg' %}')"></div>
               <div class="col-lg-6 my-auto showcase-text">
                   <h2>Face Recognition</h2>
-                  <p class="lead mb-0">Newly improved, and full of great utility classes, Bootstrap 5 is leading the way in mobile responsive web development! All of the themes on Start Bootstrap are now using Bootstrap 5!</p>
+                  <p class="lead mb-0">The goal of this project is to detect and locate human faces in a color image. Our method uses rejection based classification. The face detector consists of a set of weak classifiers that sequentially reject non-face regions.!</p>
               </div>
           </div>
           <div class="row g-0">
-              <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('{% static 'assets/img/bg-showcase-3.jpg' %}')"></div>
+              <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('{% static 'assets/img/fall_detection_main.jpg' %}')"></div>
               <div class="col-lg-6 order-lg-1 my-auto showcase-text">
                   <h2>Person Fall Detection</h2>
-                  <p class="lead mb-0">Landing Page is just HTML and CSS with a splash of SCSS for users who demand some deeper customization options. Out of the box, just add your content and images, and your new landing page will be ready to go!</p>
+                  <p class="lead mb-0">Falls represent a major public health risk worldwide for the elderly people and childrens. If a fall is detected, an alert is activated and the system reacts automatically by sending Alerts to the groups responsible for the care of the elderly people and childrens!</p>
               </div>
           </div>
       </div>
   </section>
 
-  <!-- About-->
-  <section class="page-section" id="about">
-      <div class="container">
-          <div class="text-center">
-              <h2 class="section-heading text-uppercase">About</h2>
-              <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-          </div>
-          <ul class="timeline">
-              <li>
-                  <div class="timeline-image"><img class="rounded-circle img-fluid" src="{% static 'assets/img/about/1.jpg' %}" alt="..." /></div>
-                  <div class="timeline-panel">
-                      <div class="timeline-heading">
-                          <h4>2009-2011</h4>
-                          <h4 class="subheading">Our Humble Beginnings</h4>
-                      </div>
-                      <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
-                  </div>
-              </li>
-              <li class="timeline-inverted">
-                  <div class="timeline-image"><img class="rounded-circle img-fluid" src="{% static 'assets/img/about/2.jpg' %}" alt="..." /></div>
-                  <div class="timeline-panel">
-                      <div class="timeline-heading">
-                          <h4>March 2011</h4>
-                          <h4 class="subheading">An Agency is Born</h4>
-                      </div>
-                      <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
-                  </div>
-              </li>
-              <li>
-                  <div class="timeline-image"><img class="rounded-circle img-fluid" src="{% static 'assets/img/about/3.jpg' %}" alt="..." /></div>
-                  <div class="timeline-panel">
-                      <div class="timeline-heading">
-                          <h4>December 2015</h4>
-                          <h4 class="subheading">Transition to Full Service</h4>
-                      </div>
-                      <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
-                  </div>
-              </li>
-              <li class="timeline-inverted">
-                  <div class="timeline-image"><img class="rounded-circle img-fluid" src="{% static 'assets/img/about/4.jpg' %}" alt="..." /></div>
-                  <div class="timeline-panel">
-                      <div class="timeline-heading">
-                          <h4>July 2020</h4>
-                          <h4 class="subheading">Phase Two Expansion</h4>
-                      </div>
-                      <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
-                  </div>
-              </li>
-              <li class="timeline-inverted">
-                  <div class="timeline-image">
-                      <h4>
-                          Be Part
-                          <br />
-                          Of Our
-                          <br />
-                          Story!
-                      </h4>
-                  </div>
-              </li>
-          </ul>
-      </div>
-  </section>
+
   <!-- Team-->
   <section class="page-section bg-light" id="team">
       <div class="container">
@@ -168,8 +105,8 @@
                       <img class="mx-auto rounded-circle" src="{% static 'assets/img/team/1.jpg' %}" alt="..." />
                       <h4>VBP</h4>
                       <p class="text-muted">Lead Designer</p>
-                      <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
-                      <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                      <!-- <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a> -->
+                      <!-- <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a> -->
                       <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
                   </div>
               </div>
@@ -178,8 +115,8 @@
                       <img class="mx-auto rounded-circle" src="{% static 'assets/img/team/2.jpg' %}" alt="..." />
                       <h4>JC</h4>
                       <p class="text-muted">Lead Marketer</p>
-                      <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
-                      <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                      <!-- <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a> -->
+                      <!-- <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a> -->
                       <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
                   </div>
               </div>

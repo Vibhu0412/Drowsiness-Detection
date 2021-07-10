@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="{% static "sleep_detect/css/under_construction.css" %}">
+  </head>
+  <body>
+    <div class="bgimg">
+      <div class="topleft">
+        <p></p>
+      </div>
+      <div class="middle">
+        <h1>This service is coming soon!!!</h1>
+        <hr>
+        <p id="demo" style="font-size:30px"></p>
+      </div>
+      <div class="bottomleft">
+        <p>Stay tuned for something amazing!!</p>
+      </div>
+      <div class="bottomright">
+        <button type="button" name="button"><a href="{% url 'home_page' %}">Back</a></button>
+      </div>
+    </div>
+
+    <script src="{% static 'sleep_detect/js/under_construction.js' %}"></script>
+  </body>
+</html>
